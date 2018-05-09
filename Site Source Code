@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Mobile App</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="styles/custom.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="ftp://katharineumhoefer@sotd.us@ftp.sotd.us/MobileApps/NewTheme/Mod-5-themes/ThreeSwatches.min.css" />
+<link rel="stylesheet" href="ftp://katharineumhoefer@sotd.us@ftp.sotd.us/MobileApps/NewTheme/Mod-5-themes/ThreeSwatches.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        $(document).ready(function(){
+            $("form").submit(function(){
+                alert("Your form has been submitted.\nYou will recieve a confirmation email shortly.");
+            });
+        });
+
+
+        </script>
+
+</head>
+
+
+<body>
+
+<div id="page" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a">
+	  <div class="logo"><img src="https://timesofrefreshingontheoldpaths.files.wordpress.com/2012/08/a-few-of-my-favorite-things-jan-7-2011.jpg" width="200" height="121" alt=""/></div>
+	</div><!--header-->
+
+  <div data-role="header">
+    <h1>Favorite Things</h1>
+    <a href="#panel" class="ui-btn ui-btn-inline">Open Panel</a>
+    <h3 id="welcome"></h3>
+  </div><!--header-->
+
+
+	<div data-role="content">
+		<ul data-role="listview" data-theme="c">
+			<li><a href="#movies">Movies</a></li>
+            <li><a href="#songs">Songs</a></li>
+			<li><a href="#gifs">Gifs</a></li>
+			<li><a href="#books">Books</a></li>
+			<li><a href="#quotes">Quotes</a></li>
+			<li><a href="#jokes">Jokes</a></li>
+            <li><a href="#foods">Foods</a></li>
+            <li><a href="#routes">Running Routes</a></li>
+			<li><a href="#patterns">Knitting Patterns</a></li>
+            <li><a href="#grid">View Grid</a></li>
+            <li><a href="#form">Register</a></li>
+            <li><a href="#favorites">Your Favorites</a></li>
+        </ul><!--mainList-->
+        
+    </div><!--content-->
+    
+	<div data-role="footer" data-theme="a">
+	  <h4>&copy; 2018 by Katie Umhoefer</h4>
+	</div><!--footer-->
+
+</div><!--page-->
+
+<div id="movies" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a" data-add-back-btn="true">
+	  <h1>Top 10 Favorite Movies</h1>
+	</div><!--header-->
+	<div data-role="content">
+      <!--<h3>Top 10 Favorite Movies</h3>-->
+      <ol data-role="listview" data-theme="a">
+            <li class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-star">First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+            <li>Sixth</li>
+            <li>Seventh</li>
+            <li>Eighth</li>
+            <li>Ninth</li>
+            <li>Tenth</li>
+      </ol><!--favorite movies list-->
+      <p>
+          <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-star" data-theme="b"><i>Favorite Item</i></button>
+      </p>
+	</div><!--content-->
+	<div data-role="footer" data-theme="a">
+	  <h4>&copy; 2018 by Katie Umhoefer</h4>
+	</div><!--footer-->
+</div><!--movies page-->
+
+<div id="songs" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a" data-add-back-btn="true">
+		<h1>Songs</h1>
+	</div><!--songs header-->
+	<div data-role="content">
+	  <h3>Song 1</h3>
+	  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec massa tincidunt, porttitor enim sit amet, pellentesque nunc. Proin varius mollis ultricies. In aliquam dapibus orci, quis dictum dui sollicitudin vel. Vivamus nec malesuada leo. Nulla est orci, ornare ut ultricies a, bibendum in sem. Donec convallis pharetra ligula in malesuada. Ut hendrerit dui et aliquam dignissim. Aenean a metus eget felis tempor pellentesque nec iaculis ipsum. </p>
+	  <h3>Song 2</h3>
+	  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec massa tincidunt, porttitor enim sit amet, pellentesque nunc. Proin varius mollis ultricies. In aliquam dapibus orci, quis dictum dui sollicitudin vel. Vivamus nec malesuada leo. Nulla est orci, ornare ut ultricies a, bibendum in sem. Donec convallis pharetra ligula in malesuada. Ut hendrerit dui et aliquam dignissim. Aenean a metus eget felis tempor pellentesque nec iaculis ipsum. </p>
+      <p>*This section will use the "accordion" widget to display*</p>
+    </div><!--content-->
+	<div data-role="footer" data-theme="a">
+		<h4>&copy; 2018 by Katie Umhoefer</h4>
+	</div><!--footer-->
+</div><!--songs page-->
+
+<div id="gifs" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a" data-add-back-btn="true">
+		<h1>Gifs</h1>
+	</div><!--gifs header-->
+	<div data-role="content">
+	  <h3>Gif 1</h3>
+	  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec massa tincidunt, porttitor enim sit amet, pellentesque nunc. Proin varius mollis ultricies. In aliquam dapibus orci, quis dictum dui sollicitudin vel. Vivamus nec malesuada leo. Nulla est orci, ornare ut ultricies a, bibendum in sem. Donec convallis pharetra ligula in malesuada. Ut hendrerit dui et aliquam dignissim. Aenean a metus eget felis tempor pellentesque nec iaculis ipsum. </p>
+	  <h3>Gif 2</h3>
+	  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec massa tincidunt, porttitor enim sit amet, pellentesque nunc. Proin varius mollis ultricies. In aliquam dapibus orci, quis dictum dui sollicitudin vel. Vivamus nec malesuada leo. Nulla est orci, ornare ut ultricies a, bibendum in sem. Donec convallis pharetra ligula in malesuada. Ut hendrerit dui et aliquam dignissim. Aenean a metus eget felis tempor pellentesque nec iaculis ipsum. </p>
+      </div><!--gifs content-->
+	<div data-role="footer" data-theme="a" >
+	  <h4>&copy; 2018 by Katie Umhoefer</h4>
+	</div><!--gifs footer-->
+</div><!--gifs page-->
+
+<div id="books" data-role="page" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a" data-add-back-btn="true">
+		<h1>Books</h1>
+	</div>
+  <div data-role="content">
+	  <h3>Book 1</h3>
+	  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec massa tincidunt, porttitor enim sit amet, pellentesque nunc. Proin varius mollis ultricies. In aliquam dapibus orci, quis dictum dui sollicitudin vel. Vivamus nec malesuada leo. Nulla est orci, ornare ut ultricies a, bibendum in sem. Donec convallis pharetra ligula in malesuada. Ut hendrerit dui et aliquam dignissim. Aenean a metus eget felis tempor pellentesque nec iaculis ipsum. </p>
+	  <h3>Book 2</h3>
+	  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec massa tincidunt, porttitor enim sit amet, pellentesque nunc. Proin varius mollis ultricies. In aliquam dapibus orci, quis dictum dui sollicitudin vel. Vivamus nec malesuada leo. Nulla est orci, ornare ut ultricies a, bibendum in sem. Donec convallis pharetra ligula in malesuada. Ut hendrerit dui et aliquam dignissim. Aenean a metus eget felis tempor pellentesque nec iaculis ipsum. </p>
+	</div><!--gifs content-->
+	<div data-role="footer" data-theme="a">
+		<h4>&copy; 2018 by Katie Umhoefer</h4>
+	</div><!--gifs footer-->
+</div><!--books page-->
+<div data-role="page" id="quotes" data-theme="a" data-add-back-btn="true">
+	<div data-role="header" data-theme="a" data-add-back-btn="true">
+		<h1>Quotes</h1>
+	</div>
+  <div data-role="content">
+	  <h3>Quote 1</h3>
+	  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec massa tincidunt, porttitor enim sit amet, pellentesque nunc. Proin varius mollis ultricies. In aliquam dapibus orci, quis dictum dui sollicitudin vel. Vivamus nec malesuada leo. Nulla est orci, ornare ut ultricies a, bibendum in sem. Donec convallis pharetra ligula in malesuada. Ut hendrerit dui et aliquam dignissim. Aenean a metus eget felis tempor pellentesque nec iaculis ipsum. </p>
+	  <h3>Quote 2</h3>
+	  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec massa tincidunt, porttitor enim sit amet, pellentesque nunc. Proin varius mollis ultricies. In aliquam dapibus orci, quis dictum dui sollicitudin vel. Vivamus nec malesuada leo. Nulla est orci, ornare ut ultricies a, bibendum in sem. Donec convallis pharetra ligula in malesuada. Ut hendrerit dui et aliquam dignissim. Aenean a metus eget felis tempor pellentesque nec iaculis ipsum. </p>
+	</div><!--quotes content-->
+	<div data-role="footer" data-theme="a">
+		<h4>&copy; 2018 by Katie Umhoefer</h4>
+	</div><!--quotes footer-->
+</div><!--quotes page-->
+<div data-role="page" id="routes" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a" data-add-back-btn="true">
+    <h1>Running Routes</h1>
+  </div><!--running routes header-->
+  <div data-role="content">Running Routes (Maps)</div><!--content-->
+  <div data-role="footer" data-theme="a">
+    <h4>&copy; 2018 by Katie Umhoefer</h4>
+  </div><!--footer-->
+</div><!--page-->
+
+<div data-role="page" id="patterns" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a" data-add-back-btn="true">
+    <h1>Knitting Patterns</h1>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-theme="b" data-filter="true" data-filter-placeholder="Filter list...">
+        <li class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-star">Pattern 1</li>
+        <li>Pattern 2</li> 
+        <li>Pattern 3</li> 
+        <li>Pattern 4</li>      
+        <li>Pattern 5</li> 
+        <li>Pattern 6</li> 
+        <li>Pattern 7</li> 
+    </ul>  
+
+          <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-star" data-theme="b"><i>Favorite Item</i></button>
+
+
+  </div>
+  <div data-role="footer" data-theme="a">
+    <h4>&copy; 2018 by Katie Umhoefer</h4>
+  </div>
+</div><!--patterns page-->
+
+<div data-role="page" id="jokes" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a" data-add-back-btn="true">
+    <h1>Jokes</h1>
+  </div><!--jokes header-->
+  <div data-role="content">Content</div>
+  <div data-role="footer" data-theme="a">
+    <h4>&copy; 2018 by Katie Umhoefer</h4>
+  </div><!--footer-->
+</div><!--jokes page-->
+
+<div data-role="page" id="foods" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a" data-add-back-btn="true">
+    <h1>Foods</h1>
+  </div><!--foods header-->
+  <div data-role="content">
+
+        <ul data-role="listview" data-theme="c" data-filter="true">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+            <li>Sixth</li>
+            <li>Seventh</li>
+            <li>Eighth</li>
+            <li>Ninth</li>
+            <li>Tenth</li>
+        </ul>
+        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-top ui-icon-star" data-theme="b"><i>Favorite Item</i></button>
+        
+  </div><!--foods content-->
+  <div data-role="footer" data-theme="a">
+    <h4>&copy; 2018 by Katie Umhoefer</h4>
+  </div><!--foods footer-->
+</div><!--foods page-->
+
+<div data-role="page" id="form" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a" data-add-back-btn="true">
+    <h1>Register</h1>
+  </div><!--form page header-->
+  <div data-role="content">
+             
+        <form action="" method="post"> 
+                <label for="fName">First Name:</label>
+                <input class="localstorage" name="fName" id="fName" value="" type="text" data-clear-btn="true" placeholder="First Name..." required 	ui-icon-grip-diagonal-se>
+                <label for="lName">Last Name:</label>
+                <input class="localstorage" name="lName" id="lName" value="" type="text" data-clear-btn="true" placeholder="Last Name..." required>  
+                <label for="email">Email Address:</label>
+                <input class="localstorage" name="email" id="email" value="" type="email" data-clear-btn="true" placeholder="example@domain.com..." required>   
+                <label for="phone">Phone Number:</label>
+                <input class="localstorage" name="phone" id="phone" value="" type="tel" data-clear-btn="true" placeholder="000-000-0000..." >    
+                <label for="password">Password:</label>
+                <input class="localstorage" name="password" id="password" value="" autocomplete="off" type="password" data-clear-btn="true" placeholder="Password..." required>
+
+                <fieldset data-role="controlgroup">
+                    <legend></legend>
+                    <input class="localstorage" name="checkbox-1a" id="checkbox-1a" checked="" type="checkbox">
+                    <label for="checkbox-1a">Sign up for the Monthy Newsletter</label>
+                    <input class="localstorage" name="checkbox-2a" id="checkbox-2a" type="checkbox">
+                    <label for="checkbox-2a">Receive Special Offers</label>
+                </fieldset><br><br>
+            <div data-role="rangeslider" data-mini="true">
+                <label for="range"><b>Select Your Age:</b><br><i>(Must be 16 or older to register)</i></label>
+                <input class="localstorage" name="range" id="range" min="16" max="100" value="35" type="range">
+            </div>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset Form">
+        </form>
+
+
+  </div><!--form page content-->
+  <div data-role="footer" data-theme="a">
+    <h4>&copy; 2018 by Katie Umhoefer</h4>
+  </div><!--form page footer-->
+</div><!--form page-->
+
+<div data-role="page" id="grid" data-theme="a" data-add-back-btn="true">
+    <div data-role="header" data-theme="a" data-add-back-btn="true">
+      <h1>Grid</h1>
+    </div><!--grid header-->
+    <div data-role="content">
+          <div class="ui-grid-d">
+              <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Block A</div></div>
+              <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Block B</div></div>
+              <div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:60px">Block C</div></div>
+              <div class="ui-block-d"><div class="ui-bar ui-bar-a" style="height:60px">Block D</div></div>
+              <div class="ui-block-e"><div class="ui-bar ui-bar-a" style="height:60px">Block E</div></div>
+          </div><!--grid-d-->
+  
+      </div><!--content-->
+    <div data-role="footer" data-theme="a">
+      <h4>Footer</h4>
+    </div><!--grid footer-->
+  </div><!--grid page-->
+
+  <div data-role="page" id="panel" data-theme="a" data-add-back-btn="true">
+        <div data-role="header" data-theme="a" data-add-back-btn="true">
+          <h1>Additional Details</h1>
+        </div><!--panel header-->
+        
+                        <h2>Sub-Menu Header</h2>
+                        <ul data-role="listview" data-theme="c">
+                        <li class="menu"><a href="#">Item 1</a></li>
+                        <li class="menu"><a href="#">Item 2</a></li>
+                        <li class="menu"><a href="#">Item 3</a></li>
+                        <li class="menu"><a href="#">Item 4</a></li>
+                        <li class="menu"><a href="#">Item 5</a></li>
+                        <li class="menu"><a href="#">Item 6</a></li>
+                        </ul>
+
+        <div data-role="footer" data-theme="a">
+          <h4>&copy; 2018 by Katie Umhoefer</h4>
+        </div><!--panel footer-->
+      </div><!--panel page-->
+
+      <div data-role="page" id="favorites" data-theme="a" data-add-back-btn="true">
+            <div data-role="header" data-theme="a" data-add-back-btn="true">
+              <h1>Your Favorites</h1>
+            </div><!--favorites header-->
+            <div data-role="content">
+                <h2>Tell Us Your Favorites!</h2>
+
+                <p id="viewFavorites">
+                        <label for="color">What is your favorite color?</label>
+                        <input class="localstorage" name="color" id="color" value="" type="text" data-clear-btn="true" placeholder="Favorite Color..." required 	ui-icon-grip-diagonal-se>
+                        <label for="animal">What is your favorite animal?</label>
+                        <input class="localstorage" name="animal" id="animal" value="" type="text" data-clear-btn="true" placeholder="Favorite Animal..." required>  
+            
+                        <input type="submit" onclick="populateStorage()" value="Submit">
+    
+                </p><!--viewFavorites-->
+
+
+            </div><!--favorites content-->
+            
+            <div data-role="footer" data-theme="a">
+              <h4>&copy; 2018 by Katie Umhoefer</h4>
+            </div><!-- favorites footer-->
+          
+        </div><!--favorites page-->
+
+
+  <div data-role="footer" data-theme="a">
+    <h4>&copy; 2018 by Katie Umhoefer</h4>
+  </div><!--main footer-->
+
+<script> 
+
+function populateStorage() {
+  localStorage.setItem('color', document.getElementById('color').value);
+  localStorage.setItem('animal', document.getElementById('animal').value);
+  
+  viewFavorites();
+}
+
+function viewFavorites() {
+    var favoriteColor = "blue";
+    var favColor = localStorage.getItem('color');
+    var favAnimal = localStorage.getItem('animal');
+    document.getElementById("viewFavorites").innerHTML="Your favorite color is " + favColor + "<br>Your favorite animal is " + favAnimal;
+}
+
+</script>
+
+</body>
+</html>
+
+        
