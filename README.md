@@ -27,9 +27,9 @@ ftp://katharineumhoefer@sotd.us@ftp.sotd.us/MobileApps/ScreenShots/FoodsFiltered
 "View Grid" features a demonstration of jQuery's grid layout.
 ftp://katharineumhoefer@sotd.us@ftp.sotd.us/MobileApps/ScreenShots/Grid.png
 
-"Register" provides a form where the user can enter their name and contact info as well as opt into the newsletter.  Input is saved in local storage.
+"Register" provides a form where the user can enter their name and contact info as well as opt into the newsletter.  When the form is submitted, an alert informs the user that they will receive a confirmation email.  Input is saved in local storage.
 ftp://katharineumhoefer@sotd.us@ftp.sotd.us/MobileApps/ScreenShots/Register.png
 
-"Your Favorites" provides a place for the user to enter their favorite color and animal; when the form is submitted the page displays a printout of what the user entered.  Input is saved in web storage.
+"Your Favorites" provides a place for the user to enter their favorite color and animal; when the user clicks the "Submit" button, the page displays a printout of what the user entered.  Input is saved in web storage.
 ftp://katharineumhoefer@sotd.us@ftp.sotd.us/MobileApps/ScreenShots/UserFavorites.png
 ftp://katharineumhoefer@sotd.us@ftp.sotd.us/MobileApps/ScreenShots/FavoritesDisplay.png
